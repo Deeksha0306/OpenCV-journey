@@ -1,5 +1,5 @@
 import cv2 as cv
-img = cv.imread("../images/land.jpg")  #for reading the image
+img = cv.imread("../images/redd.jpg")  #for reading the image
 cv.imshow("img",img)  # for displaying the image
 
 
@@ -44,7 +44,6 @@ cv.imshow("HSVX", hsvx)
 # 10. Grayscale to BGR 
 grayx = cv.cvtColor(gray, cv.COLOR_GRAY2BGR)
 cv.imshow("grayx",grayx)
-
 
 cv.waitKey(0)
 cv.destroyAllWindows()
