@@ -28,6 +28,10 @@ rotate_rotate=rotate(rotated, -125)
 cv.imshow("rotated90", rotated)
 cv.imshow("rotated35", rotate_rotate)
 
+#cropping
+image = cv.imread("../images/land.jpg")
+crop = image[50:100, 20:60]
+cv.imshow("cropped image", crop)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
