@@ -25,10 +25,12 @@ erode2 = cv.erode(canny2,kernel,iterations = 1)
 cv.imshow("erosion2",erode2)
 
 #Dilation
-dilate1 = cv.dilate(canny1,kernel,iterations = 5)
+dilate1 = cv.dilate(canny1,kernel,iterations = 1)
 cv.imshow("dilation1",dilate1)
 dilate2 = cv.dilate(canny2,kernel,iterations = 2)
 cv.imshow("dilation2",dilate2)
+
+
 
 cv.waitKey(0)
 cv.destroyAllWindows()
