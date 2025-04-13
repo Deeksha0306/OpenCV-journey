@@ -1,5 +1,7 @@
 import cv2 as cv
 import numpy as np
+import matplotlib as plt
+
 img = cv.imread("../images/redd.jpg")
 cv.imshow("img", img)
 
@@ -30,6 +32,18 @@ cv.imshow("dilation1",dilate1)
 dilate2 = cv.dilate(canny2,kernel,iterations = 2)
 cv.imshow("dilation2",dilate2)
 
+#resizing
+img = cv.imread("../images/girl.jpeg")
+cv.imshow("image",img)
+imgresi = cv.resize(img,(200,599))
+cv.imshow("resized",imgresi)
+
+#drawing 
+blank = np.zeros((500,500,3), np.uint8)
+rectangle = cv.rectangle(blank, (0,0),(250,250), (255,255,255),thickness=2)
+rectangle2 = cv.rectangle(blank, (255,0),(500,500), (255,0,0),thickness=2)
+plt.imshow(rectangle2)
+plt.show()
 
 
 cv.waitKey(0)
