@@ -1,8 +1,10 @@
 import cv2 as cv
-img = cv.imread("../images/redd.jpg")  #for reading the image
-cv.imshow("img",img)  # for displaying the image
+import matplotlib.pyplot as plt
+img = cv.imread("../images/redd.jpg")  
+# cv.imshow("img",img)  
 
-
+plt.imshow(img)
+plt.show()
 # COLOR SPACES
 
 # 1. BGR to Grayscale
